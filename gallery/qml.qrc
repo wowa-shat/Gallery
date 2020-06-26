@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>translator/gallery_ENG.qm</file>
+        <file>translator/gallery_RUS.qm</file>
+    </qresource>
+</RCC>
