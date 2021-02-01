@@ -13,22 +13,28 @@ Window {
     width: 720
     height: 720
     title: qsTr("Галлерея") + trans.emptyString
+    property var sMenu: qsTr("Меню") + trans.emptyString
+    property var sFolder: qsTr("Выберите папку") + trans.emptyString
+    property var sRemove: qsTr("Удалить изображение") + trans.emptyString
+    property var sLang: qsTr("Выбор языка") + trans.emptyString
+    property var sRu: qsTr("Русский") + trans.emptyString
+    property var sEn: qsTr("Английский") + trans.emptyString
 
     //меню
     MenuBar {
         Menu {
             //BUG: не переводится пока не навёл курсор
-            title: qsTr("Меню") + trans.emptyString
+            title: sMenu
 
             MenuItem {
                 id: chooseFolder
-                text: qsTr("Выберите папку") + trans.emptyString
+                text: sFolder
                 onTriggered: folderDialog.visible = true
             }
 
             MenuItem {
                 id: removeImage
-                text: qsTr("Удалить изображение") + trans.emptyString
+                text: sRemove
                 onTriggered :
                 {
                     if (img.source != "") {
@@ -40,16 +46,16 @@ Window {
             }
 
             Menu {
-                title: qsTr("Выбор языка") + trans.emptyString
+                title: sLang
                 MenuItem {
-                    text: qsTr("Русский") + trans.emptyString
+                    text: sRu
                     onTriggered :
                     {
                         trans.updateLanguage(MyLang.RUS)
                     }
                 }
                 MenuItem {
-                    text: qsTr("Английский") + trans.emptyString
+                    text: sEn
                     onTriggered :
                     {
                         trans.updateLanguage(MyLang.ENG)
