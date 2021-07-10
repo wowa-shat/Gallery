@@ -7,19 +7,19 @@ A program for viewing images.
 3. [Video](#Video)
 
 ## Description of features
-* Подгрузка всех изображений из выбранной папки.
-* Просмотр выбранного из списка изображения
-* Возможность удаления выбранного изображения с компьютера
-* Переименование изображений
-* Русская и английская локализация
+* Uploading all images from the selected folder
+* View the image selected from the list
+* The ability to delete the selected image from the computer
+* Renaming images
+* Russian and English localization
 
 ## How to build a project
-Сборка осуществляется с помощью среды Qt Creator
-- Для сборки необходимы:
+Build us made using Qt Creator IDE
+- For the build, you need:
     - Desktop Qt 5.13.2
     - mingw73_64
-- Открыть проект с помощью Qt Creater.
-- Собрать.
+- Open the project using Qt Creator
+- Build it
 
 ## Video
 https://drive.google.com/file/d/1kHcMwqqiGz0mlbjJoRIzo5-mdtbe2Gyw/view?usp=sharing
